@@ -1,4 +1,4 @@
-@extends('layouts.app') 
+@extends('layouts.app-plain') 
 
 @section('content')
     <!-- content-wrapper starts -->

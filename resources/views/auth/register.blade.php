@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app-plain')
 
 @section('content')
 <div class="content-wrapper full-page-wrapper d-flex align-items-center auth register-full-bg">

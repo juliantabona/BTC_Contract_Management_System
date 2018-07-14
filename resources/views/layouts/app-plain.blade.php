@@ -27,25 +27,14 @@
 <body>
     <body>
         <div id="app">
-            <main class="py-4">
+            <main>
                 <!-- container-scroller -->
                 <div class="container-scroller">
-                    <!-- Top menu with logo, profile and message icons -->
-                    @include('layouts/topmenu/default-topmenu')
                     <div class="container-fluid page-body-wrapper">
-                        <div class="row row-offcanvas row-offcanvas-right">
-                            <!-- Right sidebar with instant settings -->
                             @include('layouts/sidebar/default-right-settings') 
-                            @include('layouts/sidebar/default-right-todolist')
-                            <!-- Left sidebar with navigation menus -->
-                            @include('layouts/sidebar/default-left-menu')
-                            <!-- Dashboard content -->
-                            <div class="content-wrapper" style="min-height: 2956.38px;">
-                                @include('layouts/alerts/default-top-alerts') 
-                                @yield('content')
-                            </div>
-                            <!-- partial:partials/_footer.html -->
-                            @include('layouts/footer/default-footer')
+                        <div class="row row-offcanvas row-offcanvas-right">
+                            <!-- Page content -->
+                            @yield('content')
                         </div>
                     </div>
                 </div>
