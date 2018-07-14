@@ -21421,7 +21421,7 @@ div.tagsinput {
 /* === Landing screens === */
 /* Auth */
 .auth.login-full-bg {
-  background: url("../images/auth/login_4.jpg");
+  background: url("../assets/images/app_bg_1.jpg");
   background-size: cover;
   }
 
@@ -21430,7 +21430,7 @@ div.tagsinput {
   background-size: cover; }
 
 .auth.register-full-bg {
-  background: url("../images/auth/app_bg_2.jpeg");
+  background: url("../assets/images/app_bg_2.jpeg");
   background-size: cover;
   }
 
