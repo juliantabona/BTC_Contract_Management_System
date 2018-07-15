@@ -10,18 +10,25 @@
 
     <title>{{ config('app.name', 'BTC Contract Management System') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+
+    <!-- plugins:css -->
+        <link rel="stylesheet" href="{{ asset('css/plugins/mdi/css/materialdesignicons.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/plugins/simple-line-icons/css/simple-line-icons.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/plugins/perfect-scrollbar/dist/css/perfect-scrollbar.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/plugins/pace/themes/custom/custom-pace.css') }}">
+    <!-- endinject -->
 
     <!-- App Compilled Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- App Custom Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+    <!-- Current Page Additional Styles -->
+    @yield('style')
 
 </head>
 <body>
@@ -50,7 +57,29 @@
                     </div>
                 </div>
             </main>
-        </div>
+        </div>    
+        <script src="https://widget.flowxo.com/embed.js" data-fxo-widget="eyJ0aGVtZSI6IiMwMDYyMzAiLCJ3ZWIiOnsiYm90SWQiOiI1YjQ4Zjk1ZjdiZDFjNDAwOTJiYTA5YmUiLCJ0aGVtZSI6IiMwMDYyMzAiLCJsYWJlbCI6IkJUQyBTdXBwb3J0In0sIndlbGNvbWVUZXh0IjoiQXNrIGFueXRoaW5nIPCfmYIifQ==" async defer></script>
     </body>
 </body>
+
+    <!-- Scripts -->
+
+    <!-- plugins:js -->
+    <script src="{{ asset('js/plugins/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/plugins/popper.js/dist/umd/popper.min.js') }}"></script>
+    <script src="{{ asset('js/plugins/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/plugins/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js') }}"></script>
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <script src="{{ asset('js/custom/off-canvas.js') }}"></script>
+    <script src="{{ asset('js/custom/hoverable-collapse.js') }}"></script>
+    <script src="{{ asset('js/custom/misc.js') }}"></script>
+    <script src="{{ asset('js/custom/settings.js') }}"></script>
+    <script src="{{ asset('js/custom/todolist.js') }}"></script>
+    <!-- endinject -->
+
+    <!-- Current Page Additional JS -->
+    @yield('js')
+
 </html>

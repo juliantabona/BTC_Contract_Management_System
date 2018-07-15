@@ -2,7 +2,7 @@
     <ul class="nav">
         <li class="nav-item nav-profile nav-unhighlightable pt-5">
             <div class="nav-link">
-                <a href="{{ route('profile-show', [Auth::id()]) }}" class="nounderline">
+                <a href="#" class="nounderline">
                     <div class="profile-image">
                         <img src="{{ Auth::user()->avatar }}" alt="Profile Image">
                         <span class="online-status online"></span>

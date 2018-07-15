@@ -1,10 +1,10 @@
 <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
             <a class="navbar-brand brand-logo" href="/overview">
-                <img src="/images/btc-logo-2.png" alt="logo">
+                <img src="/assets/logos/btc-logo-260x145.png" alt="logo">
             </a>
             <a class="navbar-brand brand-logo-mini pr-2 pl-2" href="/overview">
-                <img src="/images/btc-logo-42x42.png" alt="logo">
+                <img src="/assets/logos/btc-logo-42x42.png" alt="logo">
             </a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center">
@@ -79,7 +79,7 @@
                         <a class="p-0 m-0">
     
                             <div class=" d-flex align-items-center border-bottom p-2">
-                                <img class="img-sm rounded-circle" src="http://127.0.0.1:8000/images/profile_placeholder.svg" alt="">
+                                <img class="img-sm rounded-circle" src="/assets/placeholders/profile_placeholder.png" alt="">
                                 <div class="wrapper w-100 ml-3">
                                     <p class="mb-0" style="font-size:  12px;">
                                         <a href="#">Keletso Sesiane</a> assigned you to inspect
@@ -91,7 +91,7 @@
                                 </div>
                             </div>
                             <div class=" d-flex align-items-center border-bottom p-2">
-                                <img class="img-sm rounded-circle" src="http://127.0.0.1:8000/images/profile_placeholder.svg" alt="">
+                                <img class="img-sm rounded-circle" src="/assets/placeholders/profile_placeholder.png" alt="">
                                 <div class="wrapper w-100 ml-3">
                                     <p class="mb-0" style="font-size:  12px;">
                                         <a href="#">Mpho Mosinyi</a> requested your authorization for publishing
@@ -103,7 +103,7 @@
                                 </div>
                             </div>
                             <div class=" d-flex align-items-center border-bottom p-2">
-                                <img class="img-sm rounded-circle" src="http://127.0.0.1:8000/images/profile_placeholder.svg" alt="">
+                                <img class="img-sm rounded-circle" src="/assets/placeholders/profile_placeholder.png" alt="">
                                 <div class="wrapper w-100 ml-3">
                                     <p class="mb-0" style="font-size:  12px;">
                                         <a href="#">Tumisang Mooketsi</a> requested your authorization for adding 
