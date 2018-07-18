@@ -26,7 +26,13 @@
 
     <!-- App Custom Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-
+    <style>
+            .footer {
+                margin-left: 0px;
+                width: 100%;
+                text-align: center;
+            }
+    </style>
     <!-- Current Page Additional Styles -->
     @yield('style')
 
@@ -38,16 +44,11 @@
                 <!-- container-scroller -->
                 <div class="container-scroller">
                     <!-- Top menu with logo, profile and message icons -->
-                    @include('layouts/topmenu/default-topmenu')
+                    @include('layouts/topmenu/guest-topmenu')
                     <div class="container-fluid page-body-wrapper">
                         <div class="row row-offcanvas row-offcanvas-right">
-                            <!-- Right sidebar with instant settings -->
-                            @include('layouts/sidebar/default-right-settings') 
-                            @include('layouts/sidebar/default-right-todolist')
-                            <!-- Left sidebar with navigation menus -->
-                            @include('layouts/sidebar/default-left-menu')
                             <!-- Dashboard content -->
-                            <div class="content-wrapper" style="min-height: 2956.38px;">
+                            <div class="content-wrapper" style="width:100%;margin-left: 0;">
                                 @include('layouts/alerts/default-top-alerts') 
                                 @yield('content')
                             </div>
@@ -58,7 +59,6 @@
                 </div>
             </main>
         </div>    
-        <script src="https://widget.flowxo.com/embed.js" data-fxo-widget="eyJ0aGVtZSI6IiMwMDYyMzAiLCJ3ZWIiOnsiYm90SWQiOiI1YjQ4Zjk1ZjdiZDFjNDAwOTJiYTA5YmUiLCJ0aGVtZSI6IiMwMDYyMzAiLCJsYWJlbCI6IkJUQyBTdXBwb3J0In0sIndlbGNvbWVUZXh0IjoiQXNrIGFueXRoaW5nIPCfmYIifQ==" async defer></script>
     </body>
 </body>
 
@@ -73,11 +73,7 @@
     <!-- endinject -->
 
     <!-- inject:js -->
-    <script src="{{ asset('js/custom/off-canvas.js') }}"></script>
-    <script src="{{ asset('js/custom/hoverable-collapse.js') }}"></script>
     <script src="{{ asset('js/custom/misc.js') }}"></script>
-    <script src="{{ asset('js/custom/settings.js') }}"></script>
-    <script src="{{ asset('js/custom/todolist.js') }}"></script>
     <!-- endinject -->
 
     <!-- Current Page Additional JS -->

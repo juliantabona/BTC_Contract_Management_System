@@ -37,12 +37,12 @@
             </a>
         </li>
         <li class="nav-item d-none d-lg-block">
-            <a data-toggle="collapse" href="#sub-jobcards" aria-expanded="false" aria-controls="sidebar-layouts" class="nav-link collapsed">
+            <a data-toggle="collapse" href="#sub-contracts" aria-expanded="false" aria-controls="sidebar-layouts" class="nav-link collapsed">
                 <i class="icon-docs menu-icon text-dark"></i>
                 <span class="menu-title text-dark">Contracts</span>
                 <i class="dropdown-arrow icon-arrow-down icons"></i>
             </a>
-            <div id="sub-jobcards" class="collapse">
+            <div id="sub-contracts" class="collapse">
                 <ul class="nav flex-column sub-menu">
                     <li class="nav-item">
                         <hr class="m-0">
@@ -73,6 +73,32 @@
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Overdue</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+            <a data-toggle="collapse" href="#sub-templates" aria-expanded="false" aria-controls="sidebar-layouts" class="nav-link collapsed">
+                <i class="icon-puzzle menu-icon text-dark"></i>
+                <span class="menu-title text-dark">Templates</span>
+                <i class="dropdown-arrow icon-arrow-down icons"></i>
+            </a>
+            <div id="sub-templates" class="collapse">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <hr class="m-0">
+                        <a href="{{ route('template.create') }}">
+                            <div class="badge badge-success badge-fw pt-2 pb-2 mt-2 mb-2">
+                                <i class="icon-plus menu-icon text-light mr-1"></i>Create Template
+                            </div>
+                        </a>
+                        <hr class="m-0">
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">View Templates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Categories</a>
                     </li>
                 </ul>
             </div>

@@ -9396,8 +9396,9 @@ fieldset[disabled] a {
   }
   .btn-dark:hover {
     color: #fff;
-    background-color: #2a2e3b;
-    border-color: #252833; }
+    background-color: #008641;
+    border-color: #008641;
+    }
   .btn-dark:focus, .btn-dark.focus {
     box-shadow: 0 0 0 0.2rem rgba(58, 63, 81, 0.5); }
   .btn-dark.disabled, .btn-dark:disabled {
@@ -9406,9 +9407,10 @@ fieldset[disabled] a {
   .btn-dark:not([disabled]):not(.disabled):active, .btn-dark:not([disabled]):not(.disabled).active,
   .show > .btn-dark.dropdown-toggle {
     color: #fff;
-    background-color: #252833;
-    border-color: #1f222c;
-    box-shadow: 0 0 0 0.2rem rgba(58, 63, 81, 0.5); }
+    background-color: #008641;
+    border-color: #008641;
+    box-shadow: 0 0 0 0.1rem #00864182;
+    }
 
 .btn-outline-primary, .wizard > .actions .disabled a {
   color: #03a9f3;
@@ -13759,7 +13761,8 @@ a.text-light:focus, a.text-light:hover {
   color: #e6e6e6 !important; }
 
 .text-dark {
-  color: #3a3f51 !important; }
+  color: #292929 !important;
+  }
 
 a.text-dark:focus, a.text-dark:hover {
   color: #252833 !important; }
@@ -14260,7 +14263,7 @@ i.dropdown-arrow.icon-arrow-down.icons.text-white {}
       margin-bottom: 0;
       padding: 0 0 0 4.25rem; }
       .sidebar .nav.sub-menu .nav-item .nav-link {
-        color: #999999;
+        color: #383838;
         padding: 0.75rem 0;
         font-size: 0.875rem;
         line-height: 1;
@@ -16448,6 +16451,9 @@ pre {
       margin-bottom: 15px;
       vertical-align: top;
       }
+      li.breadcrumb-item.progress-status-tabs.selected {
+          background: #fba200;
+      }
       .breadcrumb.breadcrumb-custom .breadcrumb-item i{
             border-radius: 100%;
             font-size: 16px;
@@ -16494,6 +16500,9 @@ pre {
       .breadcrumb.breadcrumb-custom .breadcrumb-item span {
         display: inline-block;
         vertical-align: top; }
+   li.breadcrumb-item.progress-status-tabs.selected span:before {
+        border-left-color: #fba200;
+   }
   .breadcrumb.bg-success, .settings-panel .color-tiles .breadcrumb.tiles.success, .swal2-modal .swal2-buttonswrapper .breadcrumb.swal2-styled.swal2-confirm, .breadcrumb.bg-dark, .settings-panel .color-tiles .breadcrumb.tiles.dark, .breadcrumb.bg-danger, .settings-panel .color-tiles .breadcrumb.tiles.danger, .breadcrumb.bg-warning, .settings-panel .color-tiles .breadcrumb.tiles.warning, .breadcrumb.bg-primary, .settings-panel .color-tiles .breadcrumb.tiles.primary, .breadcrumb.bg-info, .settings-panel .color-tiles .breadcrumb.tiles.info {
     border: none; }
     .breadcrumb.bg-success .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.success .breadcrumb-item, .swal2-modal .swal2-buttonswrapper .breadcrumb.swal2-styled.swal2-confirm .breadcrumb-item, .breadcrumb.bg-dark .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.dark .breadcrumb-item, .breadcrumb.bg-danger .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.danger .breadcrumb-item, .breadcrumb.bg-warning .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.warning .breadcrumb-item, .breadcrumb.bg-primary .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.primary .breadcrumb-item, .breadcrumb.bg-info .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.info .breadcrumb-item {
@@ -16966,13 +16975,14 @@ pre {
   color: #c9c8c8;
   width: auto;
   padding: 0.56rem 0.75rem;
-  border-color: #f3f3f3; }
+  border-color: #cacaca;
+  }
 
 .form-control, .asColorPicker-input, .dataTables_wrapper select, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text],
 .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .select2-container--default .select2-selection--single, .select2-container--default .select2-selection--single .select2-search__field, .typeahead,
 .tt-query,
 .tt-hint {
-  border: 1px solid #f3f3f3;
+  border: 1px solid #cacaca;
   font-family: "roboto-regular", sans-serif;
   font-size: 0.75rem;
   padding: 0.56rem 0.75rem !important;
@@ -21782,6 +21792,10 @@ div.tagsinput {
 
   .breadcrumb.breadcrumb-custom .breadcrumb-item:last-child {
     background: #dbe3e6;
+  }
+
+  .breadcrumb.breadcrumb-custom .breadcrumb-item.selected:last-child{
+    background: #fba200;
   }
 
   .breadcrumb.breadcrumb-custom .breadcrumb-item a, .breadcrumb.breadcrumb-custom .breadcrumb-item span {

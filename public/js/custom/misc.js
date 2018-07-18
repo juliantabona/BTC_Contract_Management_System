@@ -169,7 +169,7 @@
   });
 
   $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
   })
 
   });
@@ -184,3 +184,10 @@ function makeSubmitableBtn(btn){
       button.closest('form').submit(); 
   }     
 }
+
+(function($) {
+  $.fn.hightlightFade = function() {
+    this.animate( { backgroundColor: "#ffbe0061" }, 1 ).animate( { backgroundColor: "#ffffff" }, 1500 );
+    return this;
+  }
+})(jQuery);
