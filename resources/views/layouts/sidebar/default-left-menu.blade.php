@@ -25,7 +25,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="/profiles" class="nav-link">
+            <a href="http://127.0.0.1:8080/profiles" class="nav-link">
                 <i class="icon-user menu-icon text-dark"></i>
                 <span class="menu-title text-dark">Staff</span>
             </a>

@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="summary-card col-md-6 col-lg-3 grid-margin stretch-card">
-                        <div class="card card-clickable" data-href="http://127.0.0.1:8000/jobcards/step/1">
+                        <div class="card card-clickable" data-href="{{ route('request.authorized') }}">
                             <div class="card-body">
                                 <div class="d-flex align-items-center justify-content-md-center">
                                     <i class="icon-lg icon-layers icons"></i>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="summary-card col-md-6 col-lg-3 grid-margin stretch-card">
-                        <div class="card card-clickable" data-href="http://127.0.0.1:8000/jobcards/step/2">
+                        <div class="card card-clickable" data-href="{{ route('request.reviewed') }}">
                             <div class="card-body">
                                 <div class="d-flex align-items-center justify-content-md-center">
                                     <i class="icon-lg icon-eye icons"></i>
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="summary-card col-md-6 col-lg-3 grid-margin stretch-card">
-                        <div class="card card-clickable" data-href="http://127.0.0.1:8000/jobcards/step/5">
+                        <div class="card card-clickable" data-href="{{ route('request.inspection') }}">
                             <div class="card-body">
                                 <div class="d-flex align-items-center justify-content-md-center">
                                     <i class="icon-lg icon-eyeglass icons"></i>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="summary-card col-md-6 col-lg-3 grid-margin stretch-card">
-                        <div class="card card-clickable" data-href="http://127.0.0.1:8000/jobcards/step/5">
+                        <div class="card card-clickable" data-href="{{ route('request.waiting_signoff') }}">
                             <div class="card-body">
                                 <div class="d-flex align-items-center justify-content-md-center">
                                     <i class="icon-lg icon-note icons"></i>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="summary-card col-md-6 col-lg-3 grid-margin stretch-card">
-                        <div class="card card-clickable" data-href="http://127.0.0.1:8000/jobcards/step/5">
+                        <div class="card card-clickable" data-href="{{ route('request.completed') }}">
                             <div class="card-body">
                                 <div class="d-flex align-items-center justify-content-md-center">
                                     <i class="icon-lg icon-like icons"></i>
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <div class="summary-card col-md-6 col-lg-3 grid-margin stretch-card" style="">
-                        <div class="card card-clickable" data-href="/contractors">
+                        <div class="card card-clickable" data-href="http://127.0.0.1:8080/profiles">
                             <div class="card-body">
                                 <div class="d-flex align-items-center justify-content-md-center">
                                     <i class="icon-lg icon-user icons"></i>

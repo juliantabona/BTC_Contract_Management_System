@@ -29,6 +29,16 @@ class RequestController extends Controller
         return view('request.inspection');
     }
 
+    public function waiting_signoff()
+    {
+        return view('request.waiting-signoff');
+    }
+
+    public function completed()
+    {
+        return view('request.completed');
+    }
+
     public function show()
     {
         return view('request.show');

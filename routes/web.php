@@ -60,6 +60,8 @@ Route::group(['prefix' => 'requests',  'middleware' => 'auth'], function () {
     Route::get('/authorized', 'RequestController@authorized')->name('request.authorized');
     Route::get('/reviewed', 'RequestController@reviewed')->name('request.reviewed');
     Route::get('/inspection', 'RequestController@inspection')->name('request.inspection');
+    Route::get('/waiting-signoff', 'RequestController@waiting_signoff')->name('request.waiting_signoff');
+    Route::get('/completed', 'RequestController@completed')->name('request.completed');
     Route::get('/{request}', 'RequestController@show')->name('request.show');
 });
 
