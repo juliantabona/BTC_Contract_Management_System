@@ -57,6 +57,9 @@ Route::group(['prefix' => 'application',  'middleware' => 'auth'], function () {
 
 Route::group(['prefix' => 'requests',  'middleware' => 'auth'], function () {
     Route::get('/', 'RequestController@index')->name('request.index');
+    Route::get('/authorized', 'RequestController@authorized')->name('request.authorized');
+    Route::get('/reviewed', 'RequestController@reviewed')->name('request.reviewed');
+    Route::get('/inspection', 'RequestController@inspection')->name('request.inspection');
     Route::get('/{request}', 'RequestController@show')->name('request.show');
 });
 

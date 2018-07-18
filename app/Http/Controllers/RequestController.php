@@ -14,6 +14,21 @@ class RequestController extends Controller
         return view('request.index');
     }
 
+    public function authorized()
+    {
+        return view('request.authorized');
+    }
+
+    public function reviewed()
+    {
+        return view('request.reviewed');
+    }
+
+    public function inspection()
+    {
+        return view('request.inspection');
+    }
+
     public function show()
     {
         return view('request.show');

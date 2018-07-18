@@ -15,7 +15,7 @@
                                 + Add Request
                             </a>
                             <div class="dropdown ml-auto border-0 float-right mt-">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</button>
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter by Category</button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="top-start" style="position: absolute; transform: translate3d(0px, 5px, 0px); top: 0px; left: 0px; will-change: transform;">
                                     <a class="dropdown-item" href="#">Service</a>
                                     <a class="dropdown-item" href="#">MOU</a>

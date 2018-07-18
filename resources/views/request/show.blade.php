@@ -3,15 +3,30 @@
 @section('style')
     <link rel="stylesheet" href="{{ asset('css/plugins/dropify/dist/css/dropify.min.css') }}">
     <style>
-
-            .jobcard-container .card {
-                border: 1px solid #dbe3e6;
+        
+            .process_notice {
+                color: #ffab00;
+                font-size: 25px;
+                position: absolute;
+                top: -13px;
+                right: 15px;
             }
         
-            .lower-font {
+            .process_notice > a{
+                position: absolute;
                 font-size: 14px;
+                top: 8px;
+                right: 0;
             }
-    </style>
+        
+            .process_notice > i {
+                top: 0;
+                right: 68px;
+                position: absolute;
+                animation: beat 0.5s infinite alternate;
+            }
+        
+        </style>
 @endsection
 
 @section('content')
@@ -168,7 +183,7 @@
                         <div class="card-body p-3 pt-4">
                             <div class="row">
                                                                     <div class="col-12 clearfix">
-                                        <h4 class="card-title mb-3 mt-4 ml-2">Contract Agreement - Bame Mbenge</h4>
+                                        <h4 class="card-title mb-3 mt-4 ml-2">Contract Template</h4>
                                         <div class="table-responsive table-hover">
                                             <div id="document_structure_box" class="mb-5">
                                                 <textarea id = "document_structure_file" name = "document_structure_file" class="d-none">
