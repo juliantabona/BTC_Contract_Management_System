@@ -1,7 +1,7 @@
 @extends('layouts.app') 
 
 @section('style')
-
+    <link rel="stylesheet" href="{{ asset('css/plugins/dropify/dist/css/dropify.min.css') }}">
     <style>
             body.dragging, body.dragging {
                 cursor: move !important;
@@ -356,9 +356,9 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="field_description">Field Description (optional)</label>
+                            <label for="field_description">Field Description/example (optional)</label>
                             <input data-toggle="tooltip" data-placement="top" title="Description for the field helper tip"
-                                type="text" id="field_description" placeholder="Enter field description..." class="form-control">
+                                type="text" id="field_description" placeholder="Enter field description/example..." class="form-control">
                         </div>
 
                         <div class="form-group">
@@ -401,6 +401,7 @@
     /*  Plugins required for drag and drop  */
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="{{ asset('js/plugins/jquery-sortable/jquery-sortable.js')}}"></script> 
+    <script src="{{ asset('js/plugins/dropify/dist/js/dropify.min.js') }}"></script>
 
     <script>
 
@@ -535,9 +536,15 @@
                     var inputType = $(this).attr('field-type');
                     //  Get the associated icon
                     var inputIconClasses = $(this).find('i').attr("class");
+                    //  Unhide all fields
+                    $('.input-options-box').find('.form-group').show();
                     
                     //  If the selected input has a valid type
                     if(inputType != undefined){
+
+                        if(inputType == 'attach'){
+                            $('#field_placeholder').closest('.form-group').hide();
+                        }
 
                         //  Track the selected input
                         $('#add-field-modal #selectedFieldInput').val(inputType);
@@ -619,10 +626,11 @@
                                 if(inputType == 'text'){
                                     build = '<label for="'+_name+'" class="field-label">'+name+'</label>'+
                                             '<input data-toggle="tooltip" data-placement="top" title="'+description+'" '+
-                                                'type="text" id="'+_name+'" name="'+_name+'" placeholder="'+placeholder+'" value="" class="form-control">'
+                                                'type="text" id="'+_name+'" name="'+_name+'" placeholder="'+placeholder+'" value="" class="form-control">';
                     
                                 //  If the input is a type of dropdown
                                 }else if(inputType == 'dropdown'){
+
 
                                 }else if(inputType == 'checkbox'){
 
@@ -631,6 +639,12 @@
                                 }else if(inputType == 'date'){
 
                                 }else if(inputType == 'attach'){
+                                    build = '<label for="'+_name+'" class="badge badge-warning text-white field-label">'+name+'</label>'+
+                                            '<div class="wrapper mb-3">'+
+                                                '<p class="d-inline text-muted">File size is limited to not greater than <b>2MB</b>. Only <b>pdf/jpeg</b> are accepted.</p>'+
+                                            '</div>'+
+                                            '<input data-toggle="tooltip" data-max-file-size="2mb" data-placement="top" title="'+description+'"'+
+                                                'type="file" id="'+_name+'" name="'+_name+'" value="" class="dropify form-control" data-default-file="" data-height="70">';
 
                                 }
                             //  If elements already exist then issue an error
@@ -695,6 +709,9 @@
 
                             //  Hide the modal
                             $('#add-field-modal').modal('hide');
+
+                            //  Initialize file/dropbox field
+                            $('.dropify').dropify();
 
                         }
 
@@ -781,7 +798,7 @@
                                         var name = $(field).attr('name');
                                         var tag = $(field).prop("tagName");
                                         var type = $(field).attr('type');
-                                        var classes = '';
+                                        var classes = $(field).attr('class');
                                         var For = $(draggableFormBox).attr('draggable-type');
                                         var placeholder = $(field).attr('placeholder');
                                         var description = $(field).attr('title');
@@ -789,9 +806,14 @@
 
                                         //  Check for any other unique properties such as what kind of input type this field has
                                         //  If we have any, chain them to the
-                                        if( $(field).hasClass('date-picker') ){
-                                            classes = 'date-picker';
-                                        }
+                                        
+                                        //  Remove common classes
+                                        var removeItem = 'form-control';
+
+                                        //  Identify unique classes
+                                        classes = jQuery.grep(classes.split(' '), function(value) {
+                                            return value != removeItem;
+                                        }).join(' ');
 
                                         //  If the required field is not set to true or does not exist at all,
                                         //  then say that the field is not really required (its optional) by setting it to false. 

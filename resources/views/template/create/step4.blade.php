@@ -68,7 +68,7 @@
                                                     <a href="{{ route('application.show', $template->id) }}" class="input-group-append" target="_blank">
                                                         <span class="input-group-text btn btn-dark">
                                                             <i class="icon-share-alt icons mr-1"></i>
-                                                            <span>Copy Link</span>
+                                                            <span>Open Link</span>
                                                         </span>
                                                     </a>
                                                 </div>

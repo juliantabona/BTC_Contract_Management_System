@@ -55,6 +55,11 @@ Route::group(['prefix' => 'application',  'middleware' => 'auth'], function () {
     Route::post('/{template}', 'RequestApplicationController@store')->name('application.store');
 });
 
+Route::group(['prefix' => 'requests',  'middleware' => 'auth'], function () {
+    Route::get('/', 'RequestController@index')->name('request.index');
+    Route::get('/{request}', 'RequestController@show')->name('request.show');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

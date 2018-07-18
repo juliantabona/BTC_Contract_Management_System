@@ -13,7 +13,7 @@
                         </div>
                     </div>
                     <div class="summary-card col-md-6 col-lg-3 grid-margin stretch-card">
-                        <div class="card card-clickable" data-href="/jobcards/overdue">
+                        <div class="card card-clickable" data-href="{{ route('request.index') }}">
                             <div class="card-body">
                                 <div class="d-flex align-items-center justify-content-md-center">
                                     <i class="icon-social-dropbox icons icon-lg"></i>

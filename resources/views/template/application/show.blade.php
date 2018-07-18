@@ -1,7 +1,7 @@
 @extends('layouts.app-guest') 
 
 @section('style')
-
+    <link rel="stylesheet" href="{{ asset('css/plugins/dropify/dist/css/dropify.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}">
 
 @endsection
@@ -51,6 +51,7 @@
 @section('js')
 
     <script src="{{ asset('js/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+    <script src="{{ asset('js/plugins/dropify/dist/js/dropify.min.js') }}"></script>
 
     <script>
         $( document ).ready(function() {
@@ -79,7 +80,7 @@
                     }
 
                     //  Build for text inputs  
-                    if(element.tag == "INPUT"){
+                    if(element.tag == "INPUT" && element.type == 'text'){
                         
                         data +=  '<div class="'+element.width+'">'+
                                     '<div class="form-group">'+
@@ -89,7 +90,19 @@
                                         '</div>'+
                                     '</div>';
 
-                    //  Build for select inputs                                        
+                    //  Build for file inputs                                        
+                    }else if(element.tag == "INPUT" && element.type == 'file'){
+                        data +=  '<div class="'+element.width+'">'+
+                                        '<div class="form-group">'+
+                                            '<label for="'+element.id+'" class="badge badge-warning text-white field-label">'+element.label+'</label>'+
+                                            '<div class="wrapper mb-3">'+
+                                                '<p class="d-inline text-muted">File size is limited to not greater than <b>2MB</b>. Only <b>pdf/jpeg</b> are accepted.</p>'+
+                                            '</div>'+
+                                            '<input data-toggle="tooltip" data-max-file-size="2mb" data-placement="top" title="'+element.description+'"'+
+                                                'type="file" id="'+element.id+'" name="'+element.name+'" value="" class="dropify form-control" data-default-file="" data-height="70">';
+                                    '</div>'+
+                                '</div>';
+                    //  Build for select inputs 
                     }else if(element.tag == "SELECT"){
                         var options = '';
 
@@ -100,13 +113,11 @@
                         data +=  '<div class="'+element.width+'">'+
                                     '<div class="input-group mb-3">'+
                                         '<label for="'+element.id+'" class="m-0 p-0 w-100 field-label">'+element.label+'</label>'+
-                                        '<select id="'+element.id+'" class="form-control custom-select" name="'+element.id+'">'+
+                                        '<select id="'+element.id+'" class="form-control custom-select" name="'+element.name+'">'+
                                             options+
                                         '</select>'+
                                     '</div>'+
                                 '</div>';
-
-                    //  Build for textareas
                     }
 
                 });
@@ -115,12 +126,15 @@
                 //  Also attach the position of the currently clicked step
                 $('#application-form-box').html( data );
 
+                //  Initialize date field file dropbox
+                $('.date-picker').datepicker({
+                    format: "yyyy-mm-dd",
+                    enableOnReadonly: true,
+                    todayHighlight: true,
+                });
 
-                    $('.date-picker').datepicker({
-                        format: "yyyy-mm-dd",
-                        enableOnReadonly: true,
-                        todayHighlight: true,
-                    });
+                //  Initialize file/dropbox field
+                $('.dropify').dropify();
 
                 $('#form_structure').remove();
                 
