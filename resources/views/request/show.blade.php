@@ -257,107 +257,106 @@
                         <div class="card-body">
                         <h4 class="card-title text-center">Contract History</h4>
                         <div>
-                                <div>
-                                        <p class="mt-3 p-2 text-center">Today</p>
-                                        <div class="timeline">
-                                                                                        
-                                                
-        
-        
-                                                                                        
-                                                
-        
-                                                                                        
-                                                
-        
-        
-                                                                                        
-                                                
-        
-                                                                                        
-                                                <div class="timeline-wrapper timeline-wrapper-primary">
-            <div class="timeline-badge"></div>
-            <div class="timeline-panel">
-                <div class="timeline-body">
-                    <p>      
-                        <a href="/requests/33" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement" aria-describedby="tooltip784279">
-            Contract #33
-        </a> 
-        <b>currently reviewed</b>
-        
-        by
-        <a href="#">
-        Julian
-        Tabona
-        </a>
-                    </p>
-                </div>
-                <div class="timeline-footer d-flex align-items-center">
-                    <span class="ml-auto font-weight-bold mt-2">
-                        <i class="icon-clock icons"></i> 
-                        05 Jul 2018 @ 04:07
-                    </span>
-                </div>      
-            </div>
+                        <div>
+                                <p class="mt-3 p-2 text-center">Today</p>
+                                <div class="timeline">
+                                                                                
+                                        
+
+
+                                                                                
+                                        
+
+                                                                                
+                                        
+
+
+                                                                                
+                                        
+
+                                                                                
+                                        <div class="timeline-wrapper timeline-wrapper-primary">
+    <div class="timeline-badge"></div>
+    <div class="timeline-panel">
+        <div class="timeline-body">
+            <p>      
+                <a href="/requests/33" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement" aria-describedby="tooltip784279">
+    Contract #33
+</a> 
+<b>currently reviewed</b>
+
+by
+<a href="#">
+Julian
+Tabona
+</a>
+            </p>
         </div>
-        
-        
-                                                                                        
-                                                <div class="timeline-wrapper timeline-inverted timeline-wrapper-primary">
-            <div class="timeline-badge"></div>
-            <div class="timeline-panel">
-                <div class="timeline-body">
-                    <p>      
-                        <a href="/requests/33" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement" aria-describedby="tooltip784279">
-            Contract #33
-        </a> 
-        <b>authorized</b>
-        
-        by
-        <a href="#">
-        Julian
-        Tabona
-        </a>
-                    </p>
-                </div>
-                <div class="timeline-footer d-flex align-items-center">
-                    <span class="ml-auto font-weight-bold mt-2">
-                        <i class="icon-clock icons"></i> 
-                        18 Jul 2018 @ 09:07
-                    </span>
-                </div>               
-            </div>
+        <div class="timeline-footer d-flex align-items-center">
+            <span class="ml-auto font-weight-bold mt-2">
+                <i class="icon-clock icons"></i> 
+                05 Jul 2018 @ 04:07
+            </span>
+        </div>      
+    </div>
+</div>
+
+
+                                                                                
+                                        <div class="timeline-wrapper timeline-inverted timeline-wrapper-primary">
+    <div class="timeline-badge"></div>
+    <div class="timeline-panel">
+        <div class="timeline-body">
+            <p>      
+                <a href="/requests/33" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement" aria-describedby="tooltip784279">
+    Contract #33
+</a> 
+<b>authorized</b>
+
+by
+<a href="#">
+Julian
+Tabona
+</a>
+            </p>
         </div>
-        
-                                                                                        
-                                                <div class="timeline-wrapper timeline-wrapper-primary">
-            <div class="timeline-badge"></div>
-            <div class="timeline-panel">
-                <div class="timeline-body">
-                    <p>      
-                        <a href="/requests/33" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement">
-            Contract #33
-        </a> 
-        <b>submitted</b>
-        
-        by
-        <a href="http://127.0.0.1:8000/profiles/1">Bame Mbenge</a>
-                    </p>
-                </div>
-                <div class="timeline-footer d-flex align-items-center">
-                    <span class="ml-auto font-weight-bold mt-2">
-                        <i class="icon-clock icons"></i> 
-                        18 Jul 2018 @ 08:07
-                    </span>
-                </div>      
-            </div>
+        <div class="timeline-footer d-flex align-items-center">
+            <span class="ml-auto font-weight-bold mt-2">
+                <i class="icon-clock icons"></i> 
+                18 Jul 2018 @ 09:07
+            </span>
+        </div>               
+    </div>
+</div>
+
+                                                                                
+                                        <div class="timeline-wrapper timeline-wrapper-primary">
+    <div class="timeline-badge"></div>
+    <div class="timeline-panel">
+        <div class="timeline-body">
+            <p>      
+                <a href="/requests/33" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement">
+    Contract #33
+</a> 
+<b>submitted</b>
+
+by
+<a href="http://127.0.0.1:8000/profiles/1">Bame Mbenge</a>
+            </p>
         </div>
-        
-        
-                                                                                </div>
-                                        <p class="mt-3 p-2 text-center">Start</p>
-                                    </div>
-                        <p class="mt-3 p-2 text-center">Start</p>
+        <div class="timeline-footer d-flex align-items-center">
+            <span class="ml-auto font-weight-bold mt-2">
+                <i class="icon-clock icons"></i> 
+                18 Jul 2018 @ 08:07
+            </span>
+        </div>      
+    </div>
+</div>
+
+
+                                                                        </div>
+                                <p class="mt-3 p-2 text-center">Start</p>
+                            </div>
                         </div>
                         </div>
                     </div>
