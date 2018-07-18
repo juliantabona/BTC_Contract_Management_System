@@ -255,207 +255,111 @@
                 <div class="col-12 col-md-12 col-lg-12 grid-margin stretch-card">
                     <div class="card card-hoverable">
                         <div class="card-body">
-                                                            <h4 class="card-title text-center">Contract History</h4>
+                        <h4 class="card-title text-center">Contract History</h4>
+                        <div>
                                 <div>
-                                    <p class="mt-3 p-2 text-center">Today</p>
-                                    <div class="timeline">
-                                                                                    
-                                            <div class="timeline-wrapper timeline-wrapper-primary">
-        <div class="timeline-badge"></div>
-        <div class="timeline-panel">
-            <div class="timeline-body">
-                <p>      
-                    <a href="http://127.0.0.1:8000/contractors/70">Merchant Capital</a>
-    selected as contractor for 
-    <a href="http://127.0.0.1:8000/jobcards/52" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement">Jobcard #52</a>
-    
-    
-    
-    by
-    <a href="http://127.0.0.1:8000/profiles/1">
-    Julian
-    Tabona
-    </a>
-                </p>
+                                        <p class="mt-3 p-2 text-center">Today</p>
+                                        <div class="timeline">
+                                                                                        
+                                                
+        
+        
+                                                                                        
+                                                
+        
+                                                                                        
+                                                
+        
+        
+                                                                                        
+                                                
+        
+                                                                                        
+                                                <div class="timeline-wrapper timeline-wrapper-primary">
+            <div class="timeline-badge"></div>
+            <div class="timeline-panel">
+                <div class="timeline-body">
+                    <p>      
+                        <a href="/requests/33" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement" aria-describedby="tooltip784279">
+            Contract #33
+        </a> 
+        <b>currently reviewed</b>
+        
+        by
+        <a href="#">
+        Julian
+        Tabona
+        </a>
+                    </p>
+                </div>
+                <div class="timeline-footer d-flex align-items-center">
+                    <span class="ml-auto font-weight-bold mt-2">
+                        <i class="icon-clock icons"></i> 
+                        05 Jul 2018 @ 04:07
+                    </span>
+                </div>      
             </div>
-            <div class="timeline-footer d-flex align-items-center">
-                <span class="ml-auto font-weight-bold mt-2">
-                    <i class="icon-clock icons"></i> 
-                    05 Jul 2018 @ 04:07
-                </span>
-            </div>      
         </div>
-    </div>
-    
-    
-                                                                                    
-                                            <div class="timeline-wrapper timeline-inverted timeline-wrapper-primary">
-        <div class="timeline-badge"></div>
-        <div class="timeline-panel">
-            <div class="timeline-body">
-                <p>
-                    <a href="http://127.0.0.1:8000/contractors/71">Aberdeen</a>
-    added to list of <b>contractors</b> for 
-    <a href="http://127.0.0.1:8000/jobcards/52" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement">Jobcard #52</a>
-    
-    by
-    <a href="http://127.0.0.1:8000/profiles/1">
-    Julian
-    Tabona
-    </a>
-                </p>
+        
+        
+                                                                                        
+                                                <div class="timeline-wrapper timeline-inverted timeline-wrapper-primary">
+            <div class="timeline-badge"></div>
+            <div class="timeline-panel">
+                <div class="timeline-body">
+                    <p>      
+                        <a href="/requests/33" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement" aria-describedby="tooltip784279">
+            Contract #33
+        </a> 
+        <b>authorized</b>
+        
+        by
+        <a href="#">
+        Julian
+        Tabona
+        </a>
+                    </p>
+                </div>
+                <div class="timeline-footer d-flex align-items-center">
+                    <span class="ml-auto font-weight-bold mt-2">
+                        <i class="icon-clock icons"></i> 
+                        18 Jul 2018 @ 09:07
+                    </span>
+                </div>               
             </div>
-            <div class="timeline-footer d-flex align-items-center">
-                <span class="ml-auto font-weight-bold mt-2">
-                    <i class="icon-clock icons"></i> 
-                    05 Jul 2018 @ 04:07
-                </span>
-            </div>               
         </div>
-    </div>
-    
-                                                                                    
-                                            <div class="timeline-wrapper timeline-wrapper-primary">
-        <div class="timeline-badge"></div>
-        <div class="timeline-panel">
-            <div class="timeline-body">
-                <p>      
-                    <a href="http://127.0.0.1:8000/contractors/70">Merchant Capital</a>
-    added to list of <b>contractors</b> for 
-    <a href="http://127.0.0.1:8000/jobcards/52" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement">Jobcard #52</a>
-    
-    by
-    <a href="http://127.0.0.1:8000/profiles/1">
-    Julian
-    Tabona
-    </a>
-                </p>
+        
+                                                                                        
+                                                <div class="timeline-wrapper timeline-wrapper-primary">
+            <div class="timeline-badge"></div>
+            <div class="timeline-panel">
+                <div class="timeline-body">
+                    <p>      
+                        <a href="/requests/33" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement">
+            Contract #33
+        </a> 
+        <b>submitted</b>
+        
+        by
+        <a href="http://127.0.0.1:8000/profiles/1">Bame Mbenge</a>
+                    </p>
+                </div>
+                <div class="timeline-footer d-flex align-items-center">
+                    <span class="ml-auto font-weight-bold mt-2">
+                        <i class="icon-clock icons"></i> 
+                        18 Jul 2018 @ 08:07
+                    </span>
+                </div>      
             </div>
-            <div class="timeline-footer d-flex align-items-center">
-                <span class="ml-auto font-weight-bold mt-2">
-                    <i class="icon-clock icons"></i> 
-                    05 Jul 2018 @ 04:07
-                </span>
-            </div>      
         </div>
-    </div>
-    
-    
-                                                                                    
-                                            <div class="timeline-wrapper timeline-inverted timeline-wrapper-primary">
-        <div class="timeline-badge"></div>
-        <div class="timeline-panel">
-            <div class="timeline-body">
-                <p>
-                    <a href="http://127.0.0.1:8000/profiles/53">
-        Karabo
-        Molala
-    </a>
-    added as <b>client contact</b>
-    
-    by
-    <a href="http://127.0.0.1:8000/profiles/1">
-    Julian
-    Tabona
-    </a>
-                </p>
-            </div>
-            <div class="timeline-footer d-flex align-items-center">
-                <span class="ml-auto font-weight-bold mt-2">
-                    <i class="icon-clock icons"></i> 
-                    05 Jul 2018 @ 04:07
-                </span>
-            </div>               
-        </div>
-    </div>
-    
-                                                                                    
-                                            <div class="timeline-wrapper timeline-wrapper-primary">
-        <div class="timeline-badge"></div>
-        <div class="timeline-panel">
-            <div class="timeline-body">
-                <p>      
-                    <a href="http://127.0.0.1:8000/profiles/52">
-        David
-        Mooketsi
-    </a>
-    added as <b>client contact</b>
-    
-    by
-    <a href="http://127.0.0.1:8000/profiles/1">
-    Julian
-    Tabona
-    </a>
-                </p>
-            </div>
-            <div class="timeline-footer d-flex align-items-center">
-                <span class="ml-auto font-weight-bold mt-2">
-                    <i class="icon-clock icons"></i> 
-                    05 Jul 2018 @ 04:07
-                </span>
-            </div>      
-        </div>
-    </div>
-    
-    
-                                                                                    
-                                            <div class="timeline-wrapper timeline-inverted timeline-wrapper-primary">
-        <div class="timeline-badge"></div>
-        <div class="timeline-panel">
-            <div class="timeline-body">
-                <p>
-                    <a href="#">Metal Depots</a>
-    <b>added</b> as <b>client</b> for 
-    <a href="http://127.0.0.1:8000/jobcards/52" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement">Jobcard #52</a>
-    
-    by
-    <a href="http://127.0.0.1:8000/profiles/1">
-    Julian
-    Tabona
-    </a>
-                </p>
-            </div>
-            <div class="timeline-footer d-flex align-items-center">
-                <span class="ml-auto font-weight-bold mt-2">
-                    <i class="icon-clock icons"></i> 
-                    05 Jul 2018 @ 04:07
-                </span>
-            </div>               
-        </div>
-    </div>
-    
-                                                                                    
-                                            <div class="timeline-wrapper timeline-wrapper-primary">
-        <div class="timeline-badge"></div>
-        <div class="timeline-panel">
-            <div class="timeline-body">
-                <p>      
-                    <a href="http://127.0.0.1:8000/jobcards/52" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aircon Replacement">
-        Jobcard #52
-    </a> 
-    <b>created</b>
-    
-    by
-    <a href="http://127.0.0.1:8000/profiles/1">
-    Julian
-    Tabona
-    </a>
-                </p>
-            </div>
-            <div class="timeline-footer d-flex align-items-center">
-                <span class="ml-auto font-weight-bold mt-2">
-                    <i class="icon-clock icons"></i> 
-                    05 Jul 2018 @ 04:07
-                </span>
-            </div>      
-        </div>
-    </div>
-    
-    
-                                                                            </div>
-                                    <p class="mt-3 p-2 text-center">Start</p>
-                                </div>
-                                                    </div>
+        
+        
+                                                                                </div>
+                                        <p class="mt-3 p-2 text-center">Start</p>
+                                    </div>
+                        <p class="mt-3 p-2 text-center">Start</p>
+                        </div>
+                        </div>
                     </div>
                 </div>
     
