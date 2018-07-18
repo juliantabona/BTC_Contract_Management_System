@@ -135,7 +135,7 @@
                             <a href="#"><i class="icon-support icons mr-1"></i>
                                 <span class="ml-auto">Support</span></a>
                             </li><li class="list-group-item">
-                            <a href="#"><i class="icon-graduation icons mr-1"></i>
+                            <a href="https://saleschief.co.bw/login"><i class="icon-graduation icons mr-1"></i>
                                 <span class="ml-auto">Training</span></a>
                             </li><li class="list-group-item">
                             <a href="http://btcsupport.optimumqbw.com/" target="_blank"><i class="icon-book-open icons mr-1"></i>
